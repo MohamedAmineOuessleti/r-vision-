@@ -293,3 +293,14 @@ function average(arrOfNumbers) {
     }
         return tot / arrOfNumbers.length
 }
+//13
+function findMax(str){
+    var x=str[0]
+    for (var  i=1 ;i <= str.length;i++  ) {
+        if (str[i]>x){
+            x=str[i]
+    }
+    } 
+    return x
+        
+}
