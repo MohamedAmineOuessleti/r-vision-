@@ -304,3 +304,57 @@ function findMax(str){
     return x
         
 }
+//14
+function evenDigitsOnly(input) {
+    for (var i=0 ; i<=input.length-1;i++){
+        if ((parseInt(input[i]) %2===0)===false){
+            return false
+        }
+
+    }
+    return true
+
+}
+///15
+function palindrome(str) {
+    var strnew=""
+    var x=str.length-1
+    for (var i=x;i>=0;i--){
+        strnew=strnew+str[i]
+    }
+    for (var j=0;j<=x;j++){
+      if ((strnew[j]!==str[j])===true){
+        return false
+      }
+
+
+    else {
+        return true
+
+    }
+}
+ }
+ //16
+ function firstDuplicate(array) {
+    var   x=array.length-1
+     var j=0
+    while (j<=x-1){
+      for (var i=1;i<=x;i++){
+          if (array[j]===array[j+i]){
+           return array[j]
+          }
+      }
+        j++
+      }
+      return "No duplicates"
+
+  }
+  //17
+  function findCombinations(rows,seats) {
+    for (var i=0 ;i<=rows;i++){
+        for (var j=0 ;j<=seats;j++){
+            console.log("rows : "+i+" / seat : "+j)
+        }
+
+    }
+  }
